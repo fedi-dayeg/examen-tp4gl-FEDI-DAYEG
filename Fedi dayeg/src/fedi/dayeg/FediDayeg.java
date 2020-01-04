@@ -5,6 +5,8 @@
  */
 package fedi.dayeg;
 
+import view.Home;
+
 /**
  *
  * @author fedid
@@ -16,6 +18,11 @@ public class FediDayeg {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Home().setVisible(true);
+            }
+        });
     }
     
 }
